@@ -1,0 +1,32 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p  th:text="${msg}">........</p> 
+	<th:block>dhdsfkh</th:block>
+	<form action="/" method="post">
+		<input type="text" name="id1" th:value="${id2}"><br>
+		<input type="submit">
+	</form>
+	<form action="/" method="post">
+		th:value에서 th:뺌<input type="text" name="id1" value="${id2}"><br>
+		<input type="submit">
+	</form>
+	<form action="/test" >
+		<input type="text" name="no" ><br>
+		<input type="submit">
+	</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

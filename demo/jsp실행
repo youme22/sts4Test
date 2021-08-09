@@ -1,0 +1,17 @@
+1. ~~~Controller ==> @Controller
+2. url 호출을 하기 위해 메소드에 @GetMapping("/")
+3. 리턴 WEB-INF/views/index.jsp 찾으라고 "index" 리턴ㅇ
+4. 3번을 하기위한 준비 
+   1)application.properties 
+       spring.mvc.view.prefix=/WEB-INF/views/
+	   spring.mvc.view.suffix=.jsp
+   2)pom.xml 수정
+   타임리프 인식하지 못하도록 타임리프부분은 주석
+       	<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>   
